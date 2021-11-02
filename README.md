@@ -1,3 +1,3 @@
 # CodeWars Kata Solutions
 
-## 📝 In progress..
+## 🚧 In progress..
