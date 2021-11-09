@@ -1,7 +1,7 @@
 function highestRank(numbers) {
     let obj = {};
     numbers.forEach((number) => obj[number] ? obj[number]++ : obj[number] = 1);
-    return Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b);
+    return Number(Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b));
 }
 
 console.log(highestRank([12, 10, 8, 12, 7, 6, 4, 10, 12]));
