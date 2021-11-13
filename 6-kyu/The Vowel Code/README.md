@@ -1,0 +1,13 @@
+## The Vowel Code
+<strong>Step 1:</strong> Create a function called <code>encode()</code> to replace all the lowercase vowels in a given string with numbers according to the following pattern:</p>
+```javascript
+a -> 1
+e -> 2
+i -> 3
+o -> 4
+u -> 5
+```
+<p>For example, <code>encode("hello")</code> would return <code>"h2ll4"</code>. There is no need to worry about uppercase vowels in this kata.</p>
+<p><strong>Step 2:</strong> Now create a function called <code>decode()</code> to turn the numbers back into vowels according to the same pattern shown above.</p>
+<p>For example, <code>decode("h3 th2r2")</code> would return <code>"hi there"</code>.</p>
+<p>For the sake of simplicity, you can assume that any numbers passed into the function will correspond to vowels.</p>
