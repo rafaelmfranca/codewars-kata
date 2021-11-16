@@ -1,8 +1,7 @@
-function isValidIP(str) {
-    return /^((\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])$/.test(str);
-}
+const isValidIP = (str) => /^((\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])$/.test(str);
 
 //or
+
 const net = require('net');
 const isValidIP = (str) => net.isIP(str) === 4 ? true : false;
 
