@@ -8,6 +8,7 @@ Your task is to return:
 <li><code>false</code> otherwise.</li>
 </ul>
 For example, given the following input array:
+
 ```javascript
 var list1 = [
   { firstName: 'Fatima', lastName: 'A.', country: 'Algeria', continent: 'Africa', age: 25, language: 'JavaScript' },
