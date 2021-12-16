@@ -2,6 +2,10 @@ const askForMissingDetails = (list) => (
   list.filter((dev) => Object.keys(dev).some((key) => !dev[key] && (dev.question = `Hi, could you please provide your ${key}.`)))
 )
 
+const askForMissingDetails2 = (list) => (
+  list.filter((dev) => Object.entries(dev).some(([key, value]) => !value && (dev.question = `Hi, could you please provide your ${key}.`)))
+)
+
 const list1 = [
   { firstName: null, lastName: 'I.', country: 'Argentina', continent: 'Americas', age: 35, language: 'Java' },
   { firstName: 'Lukas', lastName: 'X.', country: 'Croatia', continent: 'Europe', age: 35, language: null },
@@ -22,6 +26,9 @@ const list2 = [
 ];
 
 const answer2 = [];
+
+console.log(askForMissingDetails(list1), answer1);
+console.log(askForMissingDetails(list2), answer2);
 
 console.log(askForMissingDetails(list1), answer1);
 console.log(askForMissingDetails(list2), answer2);
