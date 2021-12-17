@@ -1,7 +1,6 @@
 const isAgeDiverse = (list) => {
   if (!list.some(({ age }) => age >= 100 && age <= 199)) return false;
-  if (![1, 2, 3, 4, 5, 6, 7, 8, 9].every((number) => list.some(({ age }) => parseInt(age / 10) === number))) return false;
-  return true;
+  return ([1, 2, 3, 4, 5, 6, 7, 8, 9].every((number) => list.some(({ age }) => parseInt(age / 10) === number)))
 }
 
 const list1 = [
