@@ -1,18 +1,8 @@
-const f = (inp) => `${month[inp.slice(-2)]}${inp.slice(2, 4)}`;
+// Solution
+const f2 = (i) => `${new Date(i.slice(-2))}`.slice(4, 7) + i.slice(2, 4);
 
-const month = {
-  '01': 'Jan',
-  '02': 'Feb',
-  '03': 'Mar',
-  '04': 'Apr',
-  '05': 'May',
-  '06': 'Jun',
-  '07': 'Jul',
-  '08': 'Aug',
-  '09': 'Sep',
-  '10': 'Oct',
-  '11': 'Nov',
-  '12': 'Dec',
-};
+// Test -> Max numbers of chars = 52
+f=i=>`${new Date(i.slice(4))}`.slice(4,7)+i[2]+i[3];
 
 console.log(f('201809'));
+console.log(f('999901'));
