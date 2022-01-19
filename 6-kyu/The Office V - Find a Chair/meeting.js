@@ -11,15 +11,3 @@ const meeting = (x, need) => {
 
   return 'Not enough!';
 };
-
-console.log(
-  meeting(
-    [
-      ['XXX', 3],
-      ['XXXXX', 6],
-      ['XXXXXX', 9],
-    ],
-    4
-  ),
-  [0, 1, 3]
-);
